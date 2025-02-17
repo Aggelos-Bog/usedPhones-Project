@@ -21,3 +21,68 @@ Although the application lacks certain advanced features, it fulfills the basic 
 
 ---
 
+
+## 🛠️ Technologies Used  
+The project was built using the following technologies and tools:  
+
+- **Frontend:** HTML, CSS, JavaScript  
+- **Backend:** PHP (with PDO connection)  
+- **Database:** MySQL, MySQL Workbench  
+- **Development Environment:** XAMPP, Visual Studio Code  
+- **Version Control:** Git  
+
+---
+
+## ⚙️ Installation  
+
+Follow these steps to set up and run the project on your local machine:  
+
+### **1️⃣ Install Required Software**  
+Download and install the following tools:  
+
+- 🔗 [XAMPP](https://www.apachefriends.org/index.html) (Includes Apache & MySQL)  
+- 🔗 [MySQL Workbench](https://www.mysql.com/products/workbench/)  
+- 🔗 [Visual Studio Code](https://code.visualstudio.com/)  
+
+### **2️⃣ Configure MySQL & Import Database**  
+1. Open **XAMPP** and activate **Apache** and **MySQL**.  
+2. Open **MySQL Workbench** and create a new database connection with a name of your choice.  
+3. Import the database schema:  
+   - Open MySQL Workbench and load `usedphones_schema.mwb`.  
+   - Inside the schema, import the SQL files:  
+     - `usedphones_phones.sql`  
+     - `usedphones_users.sql`  
+   - Run the SQL code to apply the structure and data.  
+4. (Optional) Verify data by executing:  
+   ```sql
+   SELECT * FROM users;
+   SELECT * FROM phones;
+This step ensures that sample users and phones are available for testing.  
+
+### **3️⃣ Configure MySQL User**  
+1. Click the **Admin** button next to MySQL in XAMPP to open **phpMyAdmin**.  
+2. Navigate to the **usedphones** database.  
+3. Go to the **Privileges** tab and create a new user:  
+   - **Username:** `usedPhonesUser`  
+   - **Password:** `123`  
+   - **Grant all privileges** to this user.  
+
+
+### **4️⃣ Clone the Project & Run Locally**  
+1. Navigate to the XAMPP `htdocs` folder:  
+   ```sh
+   cd /path/to/xampp/htdocs
+2. Open your browser and visit:
+   ```sh
+   http://localhost/USEDPHONES/usedPhones/
+   
+---
+
+   ### **🔄 Alternative Setup Using PHP Server in VS Code**  
+Instead of using XAMPP, you can run the project directly in **Visual Studio Code**:  
+
+1. Install the **PHP Server** extension in VS Code.  
+2. Follow **Step 3** above to configure MySQL and create the database user.  
+3. Run the **PHP Server** plugin from VS Code to start the project.  
+
+---
