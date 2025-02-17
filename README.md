@@ -2,6 +2,22 @@
 
 ---
 
+## 📖 Table of Contents  
+
+- [📌 Overview](#-overview)  
+- [🚀 Features](#-features)  
+- [🛠️ Technologies Used](#-technologies-used)  
+- [⚙️ Installation](#-installation)  
+  - [1️⃣ Install Required Software](#1️⃣-install-required-software)  
+  - [2️⃣ Configure MySQL & Import Database](#2️⃣-configure-mysql--import-database)  
+  - [3️⃣ Configure MySQL User](#3️⃣-configure-mysql-user)  
+  - [4️⃣ Clone the Project & Run Locally](#4️⃣-clone-the-project--run-locally)  
+  - [🔄 Alternative Setup Using PHP Server in VS Code](#🔄-alternative-setup-using-php-server-in-vs-code)  
+- [🗄️ Database Schema](#-database-schema)  
+- [📝 License](#-license)  
+
+---
+
 ## 📌 Overview  
 This project was developed as part of a university course at the **University of Thessaly**. It is an application designed for listing and managing used phones. The project was created strictly for educational purposes and is not intended for professional use.  
 
@@ -86,3 +102,19 @@ Instead of using XAMPP, you can run the project directly in **Visual Studio Code
 3. Run the **PHP Server** plugin from VS Code to start the project.  
 
 ---
+
+## 🗄️ Database Schema  
+The project uses a **MySQL database** with the following structure:  
+
+- **Users Table:** Stores user account details.  
+- **Phones Table:** Stores phone listings posted by users.  
+
+The database schema can be found in the `usedphones_schema.mwb` file.  
+
+---
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+---
+
